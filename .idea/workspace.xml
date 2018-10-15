@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e92875f2-e9a8-4e34-9d67-4ede86556c2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeup_template.md" beforeDir="false" afterPath="$PROJECT_DIR$/writeup_template.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +25,10 @@
           <entry key="cpp" value="2" />
           <entry key="dae" value="1" />
           <entry key="h" value="1" />
-          <entry key="jpg" value="2" />
+          <entry key="jpg" value="3" />
           <entry key="launch" value="2" />
           <entry key="md" value="3" />
-          <entry key="png" value="15" />
+          <entry key="png" value="17" />
           <entry key="py" value="2" />
           <entry key="rviz" value="2" />
           <entry key="sh" value="2" />
@@ -42,7 +42,7 @@
         <counts>
           <entry key="Bash" value="2" />
           <entry key="C++" value="3" />
-          <entry key="Image" value="17" />
+          <entry key="Image" value="20" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Python" value="2" />
@@ -52,7 +52,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="1769" />
+          <entry key="md" value="1775" />
           <entry key="py" value="3235" />
           <entry key="txt" value="43" />
           <entry key="yaml" value="6" />
@@ -60,7 +60,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="1751" />
+          <entry key="Markdown" value="1757" />
           <entry key="PLAIN_TEXT" value="43" />
           <entry key="Python" value="3253" />
           <entry key="YAML" value="6" />
@@ -85,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kuka_arm/scripts/IK_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="-166">
               <caret line="133" column="89" selection-start-line="133" selection-start-column="89" selection-end-line="133" selection-end-column="89" />
               <folding>
                 <element signature="e#215#227#0" expanded="true" />
@@ -94,33 +94,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kuka_arm/scripts/safe_spawner.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor>
-                <caret selection-end-line="99" selection-end-column="78" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeup_template.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="150">
-                <caret line="239" column="15" selection-start-line="239" selection-start-column="15" selection-end-line="239" selection-end-column="15" />
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="195">
+                <caret line="238" selection-start-line="238" selection-end-line="238" />
               </first_editor>
               <second_editor />
             </state>
@@ -158,6 +137,7 @@
       <find>np</find>
       <find>image4</find>
       <find>theta1</find>
+      <find>rubriv</find>
     </findStrings>
     <replaceStrings>
       <replace>DH_matrix</replace>
@@ -301,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539583140301</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finish writeup">
+      <created>1539583575115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539583575115</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finish writeup">
+      <created>1539583656913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539583656913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -431,27 +425,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuka_arm/scripts/safe_spawner.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kuka_arm/urdf/kr210.urdf.xacro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1865">
           <caret line="427" column="24" selection-start-line="427" selection-start-column="24" selection-end-line="427" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor>
-            <caret selection-end-line="99" selection-end-column="78" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -474,15 +451,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc_images/theta1.jpg">
+    <entry file="file://$PROJECT_DIR$/misc_images/theta3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc_images/theta456.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/misc_images/theta1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc_images/theta1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc_images/theta2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret selection-end-line="99" selection-end-column="78" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuka_arm/scripts/safe_spawner.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kuka_arm/scripts/IK_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="-166">
           <caret line="133" column="89" selection-start-line="133" selection-start-column="89" selection-end-line="133" selection-end-column="89" />
           <folding>
             <element signature="e#215#227#0" expanded="true" />
@@ -490,20 +493,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc_images/theta3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc_images/theta456.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc_images/theta2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeup_template.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="150">
-            <caret line="239" column="15" selection-start-line="239" selection-start-column="15" selection-end-line="239" selection-end-column="15" />
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="195">
+            <caret line="238" selection-start-line="238" selection-end-line="238" />
           </first_editor>
           <second_editor />
         </state>

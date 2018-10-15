@@ -1,6 +1,8 @@
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 # Robotic arm - Pick & Place project
 
+## Commands to run the code for this project
+
 Make sure you are using robo-nd VM or have Ubuntu+ROS installed locally.
 
 ### One time Gazebo setup step:
@@ -98,9 +100,6 @@ The demo ends when the robot arm reaches at the top of the drop location.
 There is no loopback implemented yet, so you need to close all the terminal windows in order to restart.
 
 In case the demo fails, close all three terminal windows and rerun the script.
-
-
-### Writeup Template: You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
