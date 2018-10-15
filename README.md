@@ -191,6 +191,7 @@ angle_g = numpy.arctan2(
     numpy.sqrt(wrist_center[0] ** 2 + wrist_center[1] ** 2) - r1)
 theta2 = pi / 2 - angle_a - angle_g
 ```
+Max and min are used with arccos function to avoid numerical errors
 
 ##### Derive and calculate theta_3
 ![alt text][image7]
