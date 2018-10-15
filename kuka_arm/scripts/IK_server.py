@@ -94,23 +94,23 @@ def handle_calculate_IK(req):
 
             r1 = DH_matrix['r1']
             d1 = DH_matrix['d1']
-            side_a = 1.501
+            side_a = np.sqrt(DH_matrix['r3']**2 + DH_matrix['d4']**2)
             side_b = np.sqrt(
                 (np.sqrt(wrist_center[0] ** 2 + wrist_center[1] ** 2) - r1) ** 2 +
                 (wrist_center[2] - d1) ** 2)
-
-            side_c = 1.25
+            side_c = DH_matrix['r2']
             angle_a = np.arccos(max(
-                [min([(side_b * side_b + side_c * side_c - side_a * side_a) / (2 * side_b * side_c), 1]),
+                [min([(side_b ** 2 + side_c ** 2 - side_a ** 2) / (2 * side_b * side_c), 1]),
                  -1]))
-            angle_b = np.arccos(max(
-                [min([(side_a * side_a + side_c * side_c - side_b * side_b) / (2 * side_a * side_c), 1]),
-                 -1]))
-            theta2 = np.pi / 2 - angle_a - np.arctan2(
+            angle_g = np.arctan2(
                 wrist_center[2] - d1,
-                np.sqrt(wrist_center[0] * wrist_center[0] + wrist_center[1] * wrist_center[1]) - r1)
+                np.sqrt(wrist_center[0] ** 2 + wrist_center[1] ** 2) - r1)
+            theta2 = np.pi / 2 - angle_a - angle_g
 
-            link4_sag = 0.036
+            angle_b = np.arccos(max(
+                [min([(side_a ** 2 + side_c ** 2 - side_b ** 2) / (2 * side_a * side_c), 1]),
+                 -1]))
+            link4_sag = np.arctan2(DH_matrix['r3'], DH_matrix['d4'])
             theta3 = np.pi / 2 - (angle_b + link4_sag)  # account for sag in link4 of -0.054m
 
             T0_1 = get_transform_matrix(DH_matrix['alpha0'], DH_matrix['r0'], DH_matrix['d1'], theta1)
@@ -121,7 +121,7 @@ def handle_calculate_IK(req):
             R3_6 = np.array(R0_3.transpose() * rotation_end_effector, dtype=float)
 
             theta4 = np.arctan2(R3_6[2, 2], -R3_6[0, 2])
-            theta5 = np.arctan2(np.sqrt(R3_6[0, 2] * R3_6[0, 2] + R3_6[2, 2] * R3_6[2, 2]), R3_6[1, 2])
+            theta5 = np.arctan2(np.sqrt(R3_6[0, 2] ** 2 + R3_6[2, 2] ** 2), R3_6[1, 2])
             theta6 = np.arctan2(-R3_6[1, 1], R3_6[1, 0])
 
             T3_4 = get_transform_matrix(DH_matrix['alpha3'], DH_matrix['r3'], DH_matrix['d4'], theta4)

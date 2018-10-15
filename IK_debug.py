@@ -154,21 +154,21 @@ def test_code(test_case):
 
     rotation_end_effector = rotation_end_effector.subs({'r': roll, 'p': pitch, 'y': yaw})
     end_effector = Matrix([[px], [py], [pz]])
-    wrist_center = np.array(end_effector - (0.303 * rotation_end_effector[:, 2])).astype(float)
+    wrist_center = np.array(end_effector - (DH_matrix['d7'] * rotation_end_effector[:, 2])).astype(float)
 
     theta1 = np.arctan2(wrist_center[1], wrist_center[0])
 
-    side_a = 1.501
+    side_a = np.sqrt(DH_matrix['r3']**2 + DH_matrix['d4']**2)
     side_b = np.sqrt(
-        pow(np.sqrt(wrist_center[0] * wrist_center[0] + wrist_center[1] * wrist_center[1]) - 0.35, 2) +
-        pow((wrist_center[2] - 0.75), 2))
+        pow(np.sqrt(wrist_center[0] * wrist_center[0] + wrist_center[1] * wrist_center[1]) - DH_matrix['r1'], 2) +
+        pow((wrist_center[2] - DH_matrix['d1']), 2))
 
-    side_c = 1.25
-    angle_a = np.arccos((side_b * side_b + side_c * side_c - side_a * side_a) / (2 * side_b * side_c))
-    angle_b = np.arccos((side_a * side_a + side_c * side_c - side_b * side_b) / (2 * side_a * side_c))
+    side_c = DH_matrix['r2']
+    angle_a = np.arccos((side_b ** 2 + side_c ** 2 - side_a ** 2) / (2 * side_b * side_c))
+    angle_b = np.arccos((side_a ** 2 + side_c ** 2 - side_b ** 2) / (2 * side_a * side_c))
     theta2 = pi / 2 - angle_a - np.arctan2(
-        wrist_center[2] - 0.75,
-        np.sqrt(wrist_center[0] * wrist_center[0] + wrist_center[1] * wrist_center[1]) - 0.35)
+        wrist_center[2] - DH_matrix['d1'],
+        np.sqrt(wrist_center[0] * wrist_center[0] + wrist_center[1] * wrist_center[1]) -  DH_matrix['r1'])
 
     link4_sag = 0.036
     theta3 = pi / 2 - (angle_b + link4_sag)  # account for sag in link4 of -0.054m
