@@ -116,10 +116,6 @@ In case the demo fails, close all three terminal windows and rerun the script.
 [image7]: ./misc_images/theta3.png
 [image8]: ./misc_images/theta456.png
 
-
-## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
-
 ---
 ### Writeup
 
