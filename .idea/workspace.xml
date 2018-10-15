@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e92875f2-e9a8-4e34-9d67-4ede86556c2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/writeup_template.md" beforeDir="false" afterPath="$PROJECT_DIR$/writeup_template.md" afterDir="false" />
+    <list default="true" id="e92875f2-e9a8-4e34-9d67-4ede86556c2e" name="Default Changelist" comment="finish writeup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeup_template.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="1775" />
+          <entry key="md" value="1835" />
           <entry key="py" value="3235" />
           <entry key="txt" value="43" />
           <entry key="yaml" value="6" />
@@ -60,7 +61,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="1757" />
+          <entry key="Markdown" value="1817" />
           <entry key="PLAIN_TEXT" value="43" />
           <entry key="Python" value="3253" />
           <entry key="YAML" value="6" />
@@ -95,11 +96,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/writeup_template.md">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="195">
-                <caret line="238" selection-start-line="238" selection-end-line="238" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="240">
+                <caret line="129" column="24" lean-forward="true" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -189,42 +190,6 @@
             <path>
               <item name="RoboND-Kinematics-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="RoboND-Kinematics-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="kuka_arm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoboND-Kinematics-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoboND-Kinematics-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="kuka_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoboND-Kinematics-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoboND-Kinematics-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="kuka_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoboND-Kinematics-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoboND-Kinematics-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="kuka_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="kuka_arm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoboND-Kinematics-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoboND-Kinematics-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="kuka_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoboND-Kinematics-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoboND-Kinematics-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="kuka_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="worlds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoboND-Kinematics-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoboND-Kinematics-Project" type="462c0819:PsiDirectoryNode" />
               <item name="misc_images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -295,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539583656913</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finish writeup">
+      <created>1539583739723</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539583739723</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finish writeup">
+      <created>1539583904490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1539583904490</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -493,11 +472,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeup_template.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="195">
-            <caret line="238" selection-start-line="238" selection-end-line="238" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="129" column="24" lean-forward="true" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
           </first_editor>
           <second_editor />
         </state>
