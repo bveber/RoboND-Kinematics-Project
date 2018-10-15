@@ -111,7 +111,7 @@ In case the demo fails, close all three terminal windows and rerun the script.
 [image2]: ./misc_images/misc3.png
 [image3]: ./misc_images/misc2.png
 [image4]: ./misc_images/diagram.jpg
-[image5]: ./misc_images/theta1.png
+[image5]: ./misc_images/theta1.jpg
 [image6]: ./misc_images/theta2.png
 [image7]: ./misc_images/theta3.png
 [image8]: ./misc_images/theta456.png
