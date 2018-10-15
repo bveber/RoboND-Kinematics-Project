@@ -235,7 +235,7 @@ FK = T0_G_corrected
 
 #### Conclusion
 I used numpy matrix operations to speed up the runtime for handling the inverse kinematics.  The code works well most of the time typically getting 9/10 objects successfully into the drop bucket. 
-But it does fail in certain edge cases that I haven't been able to solve for.  
+But it does fail in certain edge cases that I haven't been able to solve for. 
 Occasionally the IK_handler function receives 0 valid poses from the motion planner and is unable to pick up the target object. 
 Also, the arm occasionally misses the target on the shelf, and just knocks it over, or misses entirely.  And sometimes the object is dropped during path from the shelf to the drop bucket.
 None of those errors are particularly common though as the success rate is ~90%.  
