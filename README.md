@@ -238,10 +238,10 @@ But it does fail in certain edge cases that I haven't been able to solve for.
 Occasionally the IK_handler function receives 0 valid poses from the motion planner and is unable to pick up the target object, and sometimes the object is dropped during path from the shelf to the bucket.
 None of those errors are particularly common though as the success rate is ~90%.  
 
-There was also some issues with the motion planning software.  At each pose during the trajectory I would receive the following warning:
+There was also some issues with the motion planning software.  At each pose during the planned trajectory there is a slight pause and the following warning is output by rviz:
 
     [warn] Dropping first 1 trajectory point(s) out of N, as they occur before the current time. First valid point will be reached in 0.XXs
 
-
+With more time, I would first like to find a fix for warnings from the motion planner, which would  fix the choppy movements.  I'd also like to figure out why I sometimes receive a trajectory with zero poses.
 
 
