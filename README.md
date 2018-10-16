@@ -113,7 +113,10 @@ In case the demo fails, close all three terminal windows and rerun the script.
 [image5]: ./misc_images/theta1.jpg
 [image6]: ./misc_images/theta2.png
 [image7]: ./misc_images/theta3.png
-[image8]: ./misc_images/theta456.png
+[image8]: ./misc_images/theta456_1.png
+[image9]: ./misc_images/success_pic.png
+[image10]: ./misc_images/action1.png
+[image11]: ./misc_images/action2.png
 
 ---
 ## Writeup
@@ -205,6 +208,10 @@ theta3 = pi / 2 - (angle_b + link4_sag)
 
 ##### Derive and calculate theta_4, theta_5, theta_6
 ![alt text][image8]
+
+There are two different ways to calculate theta, using either the roll (theta4) or yaw (theta6) components. 
+I chose to use the roll component to calculate theta5 to keep the convention of calculating joint angles in order from the base out to the final joint.
+This calculation of theta5 does not effect the calculation of theta4 or theta6 because both angles are calculated without knowing theta5 apriori. 
 ```python
 T0_1 = get_transform_matrix(DH_matrix['alpha0'], DH_matrix['r0'], DH_matrix['d1'], theta1)
 T1_2 = get_transform_matrix(DH_matrix['alpha1'], DH_matrix['r1'], DH_matrix['d2'], theta2 - numpy.pi/2)
@@ -234,6 +241,14 @@ FK = T0_G_corrected
 ```
 
 #### Conclusion
+Here's some actions shots
+![alt text][image10]
+
+![alt text][image11]
+
+Here's the final result of 9 objects moved into the bucket.
+![alt text][image9]
+
 I used numpy matrix operations to speed up the runtime for handling the inverse kinematics.  The code works well most of the time typically getting 9/10 objects successfully into the drop bucket. 
 But it does fail in certain edge cases that I haven't been able to solve for. 
 Occasionally the IK_handler function receives 0 valid poses from the motion planner and is unable to pick up the target object, and sometimes the object is dropped during path from the shelf to the bucket.
